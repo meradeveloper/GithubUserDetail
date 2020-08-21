@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_10"
+    tools:context=".ui.userdetail.UserDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/size_10">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView android:layout_width="@dimen/size_100"
+                android:layout_height="@dimen/size_100"
+                android:id="@+id/iv_avator"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size_21"
+                android:layout_marginBottom="@dimen/size_21"
+                android:layout_toRightOf="@id/iv_avator">
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvname"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/large_size_text"
+                    android:layout_marginLeft="@dimen/size_10" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvusername"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvbio"
+                    android:gravity="center"
+                    android:padding="@dimen/size_10"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvfollower"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvfollowing"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCompany"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvlocation"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvblog"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:textSize="@dimen/text_size_15" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:id="@+id/btn_repo"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
