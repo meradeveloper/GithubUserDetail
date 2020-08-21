@@ -50,7 +50,7 @@ class Repository @Inject constructor(val service: GithubService
     }
 
     private fun cleanCache() {
-        //cache.deleteUser()
+        cache.deleteUser()
     }
 
     fun cleanRepos()
